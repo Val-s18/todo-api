@@ -35,6 +35,8 @@ app.get('/', (req, res) => {
 
 app.use('/Todos', require('./src/routes/todos'))
 app.use('/auth', require('./src/routes/auth'))
+app.use('/inscription', require('./src/routes/sign'))
+
 // lancement de l'api
 app.listen(port, () => {
   console.log('server is listening on port : ' + port)
